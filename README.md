@@ -7,12 +7,8 @@ Atiyeh Tahavorgar
 
 Tidynamics can be installed with pip:
 
-'''
-pip install --user tidynamics
-'''
+'''pip install --user tidynamics'''
 
 or with conda (preferred way):
 
-'''
-conda install -c conda-forge tidynamics
-'''
+'''conda install -c conda-forge tidynamics'''
