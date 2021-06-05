@@ -3,7 +3,7 @@ Course project for CMSC6950 Spring 2021
 
 Atiyeh Tahavorgar
 
-
+## Software setup
 
 Tidynamics can be installed with pip:
 
