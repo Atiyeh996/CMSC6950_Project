@@ -21,6 +21,11 @@ after installation, activation is necessary:
 ```
 conda activate <envname>
 ```
+install python and numpy within conda:
+
+```
+conda install python numpy
+```
 
 Tidynamics can be installed with pip:
 
