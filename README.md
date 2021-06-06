@@ -10,6 +10,17 @@
 
 It is necessary to have Python and NumPy to install and use tidynamics.
 
+create conda environment in your project:
+
+```
+conda create -n <envname>
+```
+
+after installation, activation is necessary:
+
+```
+conda activate <envname>
+```
 
 Tidynamics can be installed with pip:
 
@@ -29,5 +40,6 @@ python -m pytest
 ```
 Installing tidynamics does not install the tests. It is necessary to download tidynamics' source and to install
 pytest to run the tests.
+
 
 
