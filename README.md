@@ -46,5 +46,9 @@ python -m pytest
 Installing tidynamics does not install the tests. It is necessary to download tidynamics' source and to install
 pytest to run the tests.
 
+you can use following codes to download tidynamics sourse and pytest:
 
-
+```
+git clone https://github.com/pdebuyl-lab/tidynamics
+pip install pytest
+```
