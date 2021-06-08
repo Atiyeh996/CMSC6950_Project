@@ -18,7 +18,7 @@ http://lab.pdebuyl.be/tidynamics/
 
 """
 from __future__ import print_function, division
-
+import sys
 import argparse
 import numpy as np
 import tidynamics
@@ -46,10 +46,10 @@ elif args.action == 'msd':
    # result = tidynamics.msd("random_steps_sample_0.txt.gz")
 
 
-plt.savefig('plot1.png', dpi=300, bbox_inches='tight')
+#plt.savefig('plot1.png', dpi=300, bbox_inches='tight')
 
 
-plt.show()
+#plt.show()
 #np.savetxt(args.output_file, result)
-#np.loadtxt(args.output_file, result)
+np.loadtxt(args.output_file, result)
 #plt.plot(file)
