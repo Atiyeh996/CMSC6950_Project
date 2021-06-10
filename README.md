@@ -38,7 +38,7 @@ or with conda (preferred way):
 ```
 conda install -c conda-forge tidynamics
 ```
-Testing:
+after installation, you must test it in tidynamics directory:
 
 ```
 python -m pytest
