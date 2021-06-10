@@ -52,3 +52,5 @@ you can use following codes to download tidynamics sourse and pytest:
 git clone https://github.com/pdebuyl-lab/tidynamics
 pip install pytest
 ```
+now the tidynamics is ready to use
+
