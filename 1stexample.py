@@ -41,3 +41,6 @@ def msd(N):
     plt.show()
     
 msd(N=2000)
+
+if __name__=="__main__":
+    msd(N=2000)
