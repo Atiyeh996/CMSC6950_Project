@@ -4,7 +4,7 @@ import tidynamics
 import random
 from numpy import *
 
-
+plt.rcParams['figure.figsize']=(10,10)
 plt.rcParams['font.family'] = 'sans-serif'
 #plt.rcParams['font.sans-serif'] = ['Tahoma']
 plt.style.use('Solarize_Light2')
