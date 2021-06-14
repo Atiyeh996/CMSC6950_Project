@@ -9,6 +9,9 @@ if len(sys.argv)==2:
     output=sys.argv[1]
 
 plt.style.use('ggplot') 
+font1 = {'family':'serif','color':'blue','size':20}
+font2 = {'family':'serif','color':'darkred','size':15}
+#compute tidynamics.correlation
 
 def corr():
     spacing = np.linspace(-5 * np.pi, 5 * np.pi, num=500)
@@ -17,11 +20,12 @@ def corr():
 
 
     acf = tidynamics.correlation(s,t)
-    plt.plot(acf,color="#7b99ff",marker='.' )
-    plt.title("correlation over time")
-    plt.xlabel("correlation")
-    plt.ylabel("time")
-
+    plt.plot(acf,marker='.',ms = 2, mfc = 'm',linestyle='dotted',linewidth = '2')
+    
+    plt.title("correlation over time",fontdict=font2,loc = 'right')
+    plt.xlabel("correlation",fontdict=font1)
+    plt.ylabel("time",fontdict=font1)
+    
     plt.savefig(output, dpi=300, bbox_inches='tight')
     plt.show()
 
