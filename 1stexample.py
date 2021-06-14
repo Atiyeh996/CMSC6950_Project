@@ -26,12 +26,12 @@ if __name__ == "__main__":
 
     l = arange(1,N//2)
 
-    plt.plot(l, mean,color="#444444",linestyle="--", label='Random walk (num.)')
+    plt.plot(l, mean,color="#444444",linestyle="--",marker = 'o', label='Random walk (num.)')
 
-    plt.plot(l, 2*l,color="k",linestyle="--", label='Random walk (theo.)')
+    plt.plot(l, 2*l,color="r",linestyle="--",marker = 'o', label='Random walk (theo.)')
 
-    plt.plot(l[1:], tidynamics.msd(l)[1:],color="#bf00ff", marker=',',label='Constant velocity (num.)', ls='--')
-    plt.plot(l[1:], l[1:]**2,color="#eeb704", marker=',' , label='Constant velocity (theo.)', ls='--')
+    plt.plot(l[1:], tidynamics.msd(l)[1:],color="#bf00ff", marker='o',label='Constant velocity (num.)', ls='--')
+    plt.plot(l[1:], l[1:]**2,color="#eeb704", marker='o' , label='Constant velocity (theo.)', ls='--')
 
     plt.legend()
     plt.loglog()
