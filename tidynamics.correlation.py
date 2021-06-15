@@ -25,6 +25,6 @@ def corr():
     plt.xlabel("correlation",fontdict=font1)
     plt.ylabel("time",fontdict=font1)
 
-    plt.savefig("figure_correlaion.png", dp=100, bbox_inches='tight')
+    plt.savefig("figure_correlaion.png", dpi=100, bbox_inches='tight')
     plt.show()
 corr()
