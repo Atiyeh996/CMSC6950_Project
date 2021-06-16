@@ -31,14 +31,14 @@ try:
     mean /= count
     mean = mean[1:N//2]
 
-    l = arange(1,N//2)
+    T = arange(1,N//2)
 
-    plt.plot(l, mean,color="#444444",linestyle="--",marker = 'o',ms =5 ,linewidth = '1', label='Random walk (num.)')
+    plt.plot(T, mean,color="#444444",linestyle="--",marker = 'o',ms =5 ,linewidth = '1', label='Random walk (num.)')
 
-    plt.plot(l, 2*l,color="r",linestyle="--",marker = 'o',ms =5,linewidth = '1', label='Random walk (theo.)')
+    plt.plot(T, 2*T,color="r",linestyle="--",marker = 'o',ms =5,linewidth = '1', label='Random walk (theo.)')
 
-    plt.plot(l[1:], tidynamics.msd(l)[1:],color="#bf00ff", marker='o', ms = 5,linewidth = '1',label='Constant velocity (num.)')
-    plt.plot(l[1:], l[1:]**2,color="#eeb704", marker='o' ,ms = 5,linewidth = '1', label='Constant velocity (theo.)')
+    plt.plot(T[1:], tidynamics.msd(l)[1:],color="#bf00ff", marker='o', ms = 5,linewidth = '1',label='Constant velocity (num.)')
+    plt.plot(T[1:], T[1:]**2,color="#eeb704", marker='o' ,ms = 5,linewidth = '1', label='Constant velocity (theo.)')
 
     plt.legend()
     plt.loglog()
