@@ -1,6 +1,4 @@
-
 import tidynamics
-#from tidynamics import acf
 import sys
 from matplotlib import pyplot as plt
 
