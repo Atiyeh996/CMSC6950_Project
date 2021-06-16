@@ -2,7 +2,6 @@ import array as arr
 import matplotlib.pyplot as plt
 import tidynamics
 import random
-import sys
 from numpy import * 
 try:
     N=2000
@@ -20,7 +19,7 @@ try:
     mean /= count
     mean = mean[1:N//2]
 
-    l = arange(1,N//2)
+    T = arange(1,N//2)
 
 
 except:
