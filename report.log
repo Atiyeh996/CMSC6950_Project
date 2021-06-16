@@ -1,0 +1,401 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.3)  16 JUN 2021 23:41
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count176
+))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count177
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count178
+\l__pdf_internal_box=\box45
+)
+No file report.aux.
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen137
+\scratchbox=\box46
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen138
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 16.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `deBuyl2018' on page 2 undefined on input line
+ 18.
+
+No file report.bbl.
+[2] [3]
+Overfull \hbox (8.65034pt too wide) in paragraph at lines 37--41
+\OT1/cmr/m/n/12 The cross-displacement (for off-diagonal re-al-i-sa-tions of Br
+ow-n-ian mo-tion) 
+ []
+
+
+! Package inputenc Error: Unicode character ∝ (U+221D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...a scaling of the CPU time tCPU of tCPU ∝
+                                                   N log N
+? 
+! Misplaced alignment tab character &.
+l.56 ...7) and SciPy (Jones, Oliphant, Peterson, &
+                                                   others, 2001)
+? 
+[4] [5]
+Overfull \hbox (23.14034pt too wide) in paragraph at lines 83--84
+[]\OT1/cmr/bx/n/12 Below is the code and its vi-su-al-iza-tion for ti-dy-nam-ic
+s.correlation(data1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 ...g("figure-correlaion.png", dpi=100, bbox_
+                                                  inches='tight')\newline
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 111.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 111.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 111.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+[6]
+<figure_correlaion.png, id=24, 433.62pt x 338.9463pt>
+File: figure_correlaion.png Graphic file (type png)
+<use figure_correlaion.png>
+Package pdftex.def Info: figure_correlaion.png  used on input line 118.
+(pdftex.def)             Requested size: 429.02708pt x 507.0425pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119     \caption
+                  {correlation}
+? 
+
+Overfull \hbox (39.02708pt too wide) in paragraph at lines 118--120
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8 <./figure_correlaion.png>]
+Overfull \hbox (5.8042pt too wide) in paragraph at lines 129--130
+[]\OT1/cmr/bx/n/12 Below is the code and its vi-su-al-iza-tion for ti-dy-nam-ic
+s.msd(pos)\OT1/cmr/m/n/12 : 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.168     plt.plot(T, mean,color="#
+                                   444444",linestyle="--",marker = 'o',ms =5...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.172 ...lot(T[1:], tidynamics.msd(l)[1:],color="#
+                                                  bf00ff", marker='o', ms = ...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.172 ...line    plt.plot(l[1:], l[1:]**2,color="#
+                                                  eeb704", marker='o' ,ms = ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.180     plt.savefig("figure_
+                              msd.png", dpi=100, bbox_inches='tight')\newline
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 180.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.182     \newpage
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
+
+ []
+
+
+Overfull \hbox (6.96843pt too wide) in paragraph at lines 174--182
+\OT1/cmr/m/n/10.95 plt.title('Examples for the mean-square dis-place-ment', fon
+t-dict = font2, font-size=10,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
+
+ []
+
+[10]
+<figure_msd.png, id=45, 613.5723pt x 730.6497pt>
+File: figure_msd.png Graphic file (type png)
+<use figure_msd.png>
+Package pdftex.def Info: figure_msd.png  used on input line 187.
+(pdftex.def)             Requested size: 429.00146pt x 507.04753pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.188     \caption
+                  {correlation}
+? 
+
+Overfull \hbox (39.00146pt too wide) in paragraph at lines 187--189
+ [] 
+ []
+
+
+! LaTeX Error: File `figure_correlation' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \includegraphics{figure_correlation}
+                                          
+? 
+
+Package natbib Warning: There were undefined citations.
+
+[11 <./figure_msd.png>] (./report.aux) ) 
+Here is how much of TeX's memory you used:
+ 2239 strings out of 481239
+ 31598 string characters out of 5920378
+ 273414 words of memory out of 5000000
+ 17506 multiletter control sequences out of 15000+600000
+ 538422 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,6n,25p,812b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on report.pdf (11 pages, 199214 bytes).
+PDF statistics:
+ 77 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+
