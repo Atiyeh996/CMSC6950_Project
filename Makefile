@@ -1,6 +1,6 @@
 all: report.pdf
-report.pdf: figure_msd.png figure_correlation.png
-	cp figure_msd.png  figure_correlation.png > report.pdf
+report.pdf: figure_msd.png figure_correlation.png report.tex
+	pdflatex report.tex
 
 figure_msd.png: tidynamics.msd.py
 	python tidynamics.msd.py > figure_msd.png
@@ -18,6 +18,9 @@ tidynamics.correlation.py: computational.tidynamics.correlation.py visualization
 clean:
 	rm *.png
 	rm *.pdf
-
+	rm *.aux
+	rm *.dvi
+	rm *.fdb_latexmk
+	rm *.log
 #.PHONY : clean
 
