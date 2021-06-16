@@ -1,5 +1,4 @@
 import sys
-#import tidynamics
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -11,7 +10,7 @@ def corr():
     s = pd.Series(0.6 * np.random.rand(500) + 0.3 * np.sin(spacing))
     t= pd.Series(0.4 * np.random.rand(500) + 0.7 * np.sin(spacing))
     acf = tidynamics.correlation(s,t)
-#    return plt
+
 
     plt.style.use('ggplot') 
     font1 = {'family':'serif','color':'blue','size':20} 
