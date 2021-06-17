@@ -15,8 +15,8 @@
 \begin{document}
 \maketitle
 \section{Introduction}
-A helpful reference for tidynamics is \cite{deBuyl2018}
-\bibliographystyle{apalike}
+A helpful reference for tidynamics is \cite{tidynamics_2018}
+\bibliographystyle{acm}
 \bibliography{bibliography.bib}\newpage
 %\begin{tikzpicture}
 %[remember picture, overlay] \draw[line width=1pt] ($(current page.north %west)+(1in,-0.5in)$) rectangle $(current page.south east)+(-0.5in,1in)$); 
@@ -27,7 +27,7 @@ A helpful reference for tidynamics is \cite{deBuyl2018}
 %\section{About software}
 
 
-In this report I explain about \textbf{software}, scientific problems solved by the software. Also, \textbf{computational tasks} and related \textbf{visualizations} will be explained. At the end of the report bibliography is added. 
+In this report I explain about \textbf{software}, scientific problems solved by the software. Also, \textbf{computational tasks} and related \textbf{visualizations} will be explained. At this report bibliography is added. 
 \newpage
 \section{software}
 Tidynamics is a package to compute the dynamics of stochastic and molecular simulations with Fast Correlation Algorithm (FCA).tidynamics is designed as a library in which every routine operates directly on NumPy
@@ -169,7 +169,6 @@ try:\newline
 
     plt.plot(T, 2*l,color="r",linestyle="--",marker = 'o',ms =5,linewidth = '1', label='Random walk (theo.)')\newline
 
-    plt.plot(T[1:], tidynamics.msd(l)[1:],color="#bf00ff", marker='o', ms = 5,linewidth = '1',label='Constant velocity )\newline    plt.plot(l[1:], l[1:]**2,color="#eeb704", marker='o' ,ms = 5,linewidth = '1', label='Constant velocity (theo.)')\newline
 
     plt.legend()\newline
     plt.loglog()\newline\newline
