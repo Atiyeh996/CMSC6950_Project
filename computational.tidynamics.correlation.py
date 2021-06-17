@@ -6,11 +6,12 @@ import tidynamics
 from tidynamics import acf
 
 
-spacing = np.linspace(-5 * np.pi, 5 * np.pi, num=500)
-s = pd.Series(0.6 * np.random.rand(500) + 0.3 * np.sin(spacing))
-t = pd.Series(0.4 * np.random.rand(500) + 0.7 * np.sin(spacing))
-acf = tidynamics.correlation(s,t)
+def corr():
+    s=np.random.randn(500)
+    t= np.random.randn(500)
 
+    acf = tidynamics.correlation(s,t)
 
+corr()
 
 
