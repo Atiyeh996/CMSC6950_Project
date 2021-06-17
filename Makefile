@@ -1,7 +1,15 @@
 default: report.pdf
 .PHONY : default
-report.pdf:report.tex bibliography.bib figure_correlation.png figure_msd.png
+report.pdf: figure_msd.png figure_correlation.png  report.tex bibliography.bib 
 	pdflatex report.tex
+
+figure_msd.png: tidynamics.msd.py
+	python tidynamics.msd.py
+
+
+
+tidynamics.msd.py: computational.tidynamics.msd.py visualization.tidynamics.msd.py
+	python computational.tidynamics.msd.py visualization.tidynamics.msd.py
 
 
 figure_correlation.png: tidynamics.correlation.py
@@ -12,12 +20,7 @@ tidynamics.correlation.py: computational.tidynamics.correlation.py visualization
 	python computational.tidynamics.correlation.py visualization.tidynamics.correlation.py
 
 
-figure_msd.png: tidynamics.msd.py
-	python tidynamics.msd.py
 
-
-tidynamics.msd.py: computational.tidynamics.msd.py visualization.tidynamics.msd.py
-	python computational.tidynamics.msd.py visualization.tidynamics.msd.py
 
 
 clean:
