@@ -11,8 +11,6 @@ plt.rcParams['figure.figsize']=(10,12)
 plt.plot(T, mean,color="#444444",linestyle="--",marker = 'o',ms =5 ,linewidth = '1', label='Random walk (num.)')
 plt.plot(T, 2*T,color="r",linestyle="--",marker = 'o',ms =5,linewidth = '1', label='Random walk (theo.)')
 
-plt.plot(T[1:], tidynamics.msd(T)[1:],color="#bf00ff", marker='o', ms = 5,linewidth = '1',label='Constant velocity (num.)')
-plt.plot(T[1:], T[1:]**2,color="#eeb704", marker='o' ,ms = 5,linewidth = '1', label='Constant velocity (theo.)')
 
 plt.legend()
 plt.loglog()
