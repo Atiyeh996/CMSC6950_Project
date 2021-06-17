@@ -1,5 +1,5 @@
 default: report.pdf
-#.PHONY : default
+.PHONY : default
 report.pdf: figure_msd.png figure_correlation.png report.tex
 	pdflatex report.tex
 
