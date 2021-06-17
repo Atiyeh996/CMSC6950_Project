@@ -2,13 +2,15 @@ import sys
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import array
 import tidynamics
 from tidynamics import acf
 
 def corr():
-    spacing = np.linspace(-5 * np.pi, 5 * np.pi, num=500)
-    s = pd.Series(0.6 * np.random.rand(500) + 0.3 * np.sin(spacing))
-    t= pd.Series(0.4 * np.random.rand(500) + 0.7 * np.sin(spacing))
+#    spacing = np.linspace(-5 * np.pi, 5 * np.pi, num=500)
+#    s =np.linspace (0.6 * np.random.rand(500) + 0.3 * np.random.random(500))
+    s=np.random.randn(500)
+    t= np.random.randn(500)
     acf = tidynamics.correlation(s,t)
 
 
