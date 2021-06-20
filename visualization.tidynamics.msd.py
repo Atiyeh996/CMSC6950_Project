@@ -1,25 +1,51 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import tidynamics
+import csv
+import sys
+import numpy as np
 
-from numpy import *
-from matplotlib import pyplot as plt
-
-font1 = {'family':'serif','color':'blue','size':20}
-font2 = {'family':'serif','color':'darkred','size':15}
-
-    
-
-plt.rcParams['figure.figsize']=(10,12)
-plt.plot(T, mean,color="#444444",linestyle="--",marker = 'o',ms =5 ,linewidth = '1', label='Random walk (num.)')
-plt.plot(T, 2*T,color="r",linestyle="--",marker = 'o',ms =5,linewidth = '1', label='Random walk (theo.)')
+if len(sys.argv)==3:
+    input = sys.argv[1]
+    output = sys.argv[2]
 
 
-plt.legend()
-plt.loglog()
-plt.plot()
-plt.xlabel('time', fontdict = font1, fontsize=10)
-plt.ylabel('mean square displacement',fontdict = font1, fontsize=10)
-plt.title('Examples for the mean-square displacement', fontdict = font2, fontsize=10, loc = 'left')
-plt.savefig("figure_msd.png", dpi=100, bbox_inches='tight')
-plt.show()
+def main():
+    try:
+        #load data from saved csv file
+
+        arr1 = pd.read_csv(input,header=None)
 
 
- 
+        N=100
+        #extract data  from file
+        mean = arr1[1:N//2]
+        #convert dataframe to numpy array
+        new=mean.to_numpy()
+
+
+
+
+        time = np.arange(N)[1:N//2]
+        #resize time axis to plot
+        z=np.resize(time, (49,1))
+        #define figuresize
+
+        plt.rcParams['figure.figsize']=(10,10)
+
+        #plot data
+
+        plt.plot(new,z,color="#444444",linestyle="--",marker = 'o',ms =5 ,linewidth = '1', label='Walk')
+
+
+        plt.xlabel('time')
+        plt.ylabel('mean square displacement')
+        plt.title('Examples for the mean-square displacement',loc = 'left')
+        plt.savefig(output, dpi=100, bbox_inches='tight')
+        plt.show()
+
+
+    except:
+        pass
+if __name__=="__main__":
+    main()
