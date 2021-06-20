@@ -38,8 +38,6 @@ def main():
         plt.plot(new,z,color="#444444",linestyle="--",marker = 'o',ms =5 ,linewidth = '1', label='Walk')
 
 
-        plt.xlabel('time')
-        plt.ylabel('mean square displacement')
         plt.title('Examples for the mean-square displacement',loc = 'left')
         plt.savefig(output, dpi=100, bbox_inches='tight')
         plt.show()
