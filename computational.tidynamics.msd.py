@@ -1,28 +1,31 @@
+#In this file, I compute mean square dispacemwnt via tidynamics
+#To run the file, you need to type: python computational.tidynamics.msd.py Data.csv
 import numpy as np
 import tidynamics
 import pandas as pd
+import sys
 
-
-
+if len(sys.argv)==2:
+    output = sys.argv[1]
 
 def main(number):
     #create zero numpy array with size n
     mean=np.linspace(0,0,number)
 
-    #set steps
-    list =([1,1],[-1,-1],[1,-1],[-1,1])
+    #initial origin
+    initialx_y=0
 
-    #convert list to np array
-    s=np.array(list)
-  
-    #resize array
-    z=np.resize(s,(number,2))
-   
-    #compute tidynamics.msd
-    mean +=tidynamics.msd(z)
+    for i in range(number):
+        x_y=np.linspace(1.,20.,1000)
+
+    #copy x_y to mean
+    mean[:]=x_y
+
+    #compute msd
+    msd = tidynamics.msd(mean)
 
     #save data into csv file
-    np.savetxt('Data.csv', mean)
+    np.savetxt(output, msd)
 
 
 
