@@ -6,30 +6,43 @@ report.pdf: report.tex msd.png acf.png Memorial-University-of-Newfoundland5.png 
 msd.png: visualization.tidynamics.msd.py Data.csv
 	python visualization.tidynamics.msd.py Data.csv msd.png
 
-acf.png: visualization.tidynamics.acf.py acf.csv time.csv time2.csv
-	python visualization.tidynamics.acf.py acf.csv time.csv time2.csv acf.png
+acf.png: visualization.tidynamics.acf.py acf.csv time.txt time2.txt
+	python visualization.tidynamics.acf.py acf.csv time.txt time2.txt acf.png
 
-Data.csv: computational.tidynamics.msd.py 
+Memorial-University-of-Newfoundland5.png: Memorial-University-of-Newfoundland5.png
+	wget https://www.docspal.com/files/processed/84/18537284-gcnprfbe/Memorial-University-of-Newfoundland5.jpeg
+
+Data.csv: computational.tidynamics.msd.py
 	python computational.tidynamics.msd.py Data.csv
 
-acf.csv: computational.tidynamics.acf.py numbers1.csv
-	python computational.tidynamics.acf.py numbers1.csv acf.csv
+acf.csv: computational.tidynamics.acf.py numbers1.txt
+	python computational.tidynamics.acf.py numbers1.txt acf.csv
+
+time.txt: time.txt
+	wget https://www.docspal.com/files/processed/22/18537122-nwhevmnc/time.txt
+
+time2.txt: time2.txt
+	wget https://www.docspal.com/files/processed/71/18537071-ggblltgx/time2.txt
+
+numbers1.txt: numbers1.txt
+	wget https://www.docspal.com/files/processed/73/18537073-vnioaufq/numbers1.txt
 
 
 
 
 
 
-#clean:
-#	rm *.pdf
-#	rm *.log
-#	rm *.png
-#	rm *.aux
-#	rm *.fls
-#	rm *.dvi
-#	rm *.fdb_latexmk
-
-
-#.PHONY : clean
+clean:
+	rm *.pdf
+	rm *.log
+	rm *.png
+	rm *.aux
+	rm *.fls
+	rm *.fdb_latexmk
+	rm *.blg
+	rm *.txt
+	rm *.bbl
+	rm *.dvi
+.PHONY : clean
 
 
