@@ -1,23 +1,20 @@
 default: report.pdf
 .PHONY : default
-report.pdf: msd.png acf.png  report.tex bibliography.bib Data.csv time.csv time2.csv acf.csv numbers1.csv
-	pdflatex report.tex
+report.pdf: report.tex msd.png acf.png Memorial-University-of-Newfoundland5.png  bibliography.bib 
+	latexmk -pdf
 
-#figure_msd.png: tidynamics.msd.py
-#	python tidynamics.msd.py
+msd.png: visualization.tidynamics.msd.py Data.csv
+	python visualization.tidynamics.msd.py Data.csv msd.png
 
+acf.png: visualization.tidynamics.acf.py acf.csv time.csv time2.csv
+	python visualization.tidynamics.acf.py acf.csv time.csv time2.csv acf.png
 
+Data.csv: computational.tidynamics.msd.py 
+	python computational.tidynamics.msd.py Data.csv
 
-#tidynamics.msd.py: computational.tidynamics.msd.py visualization.tidynamics.msd.py
-#	python computational.tidynamics.msd.py visualization.tidynamics.msd.py
+acf.csv: computational.tidynamics.acf.py numbers1.csv
+	python computational.tidynamics.acf.py numbers1.csv acf.csv
 
-
-#figure_correlation.png: tidynamics.correlation.py
-#	python tidynamics.correlation.py
-
-
-#tidynamics.correlation.py: computational.tidynamics.correlation.py visualization.tidynamics.correlation.py
-#	python computational.tidynamics.correlation.py visualization.tidynamics.correlation.py
 
 
 
