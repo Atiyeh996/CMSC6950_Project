@@ -24,7 +24,7 @@ def main():
 
     #define columns in input file
     z=file.iloc[:,0]
-    zz=file.iloc[:,1]
+    zz=file.iloc[:,2]
 
     #compute tidynamics.acf for specific column 
     for i in file:
