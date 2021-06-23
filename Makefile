@@ -25,7 +25,7 @@ time2.txt: time2.txt
 	wget https://www.docspal.com/files/processed/65/18542865-dokpnapv/time2.txt
 
 numbers1.txt: numbers1.txt
-	wget https://www.docspal.com/files/processed/73/18537073-vnioaufq/numbers1.txt
+	wget https://www.docspal.com/files/processed/36/18543136-rsvelhrg/numbers1.txt
 
 
 
