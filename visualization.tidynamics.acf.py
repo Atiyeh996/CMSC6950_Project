@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#for this file, I use acf.csv from computaional.tidynamics.acf.py and two different time series time.csv and time2.csv
-=======
 #for this file, I use acf.csv from computaional.tidynamics.acf.py and two different time series time.txt and time2.txt
->>>>>>> 130072061ce1bf0aa0a9fac2869bc46e1e1136ae
 #to run the file you need to type: python visualization.tidynamics.acf.py acf1.csv time.txt time2.txt acf1.png
 
 import sys
