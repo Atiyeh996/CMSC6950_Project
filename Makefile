@@ -1,6 +1,6 @@
 default: report.pdf
 .PHONY : default
-report.pdf: report.tex msd.png acf.png Memorial-University-of-Newfoundland5.png  bibliography.bib 
+report.pdf: report.tex msd.png acf.png Memorial-University-of-Newfoundland5.jpeg  bibliography.bib 
 	latexmk -pdf
 
 msd.png: visualization.tidynamics.msd.py Data.csv
@@ -9,7 +9,7 @@ msd.png: visualization.tidynamics.msd.py Data.csv
 acf.png: visualization.tidynamics.acf.py acf.csv time.txt time2.txt
 	python visualization.tidynamics.acf.py acf.csv time.txt time2.txt acf.png
 
-Memorial-University-of-Newfoundland5.png: Memorial-University-of-Newfoundland5.png
+Memorial-University-of-Newfoundland5.jpeg: Memorial-University-of-Newfoundland5.jpeg
 	wget https://www.docspal.com/files/processed/84/18537284-gcnprfbe/Memorial-University-of-Newfoundland5.jpeg
 
 Data.csv: computational.tidynamics.msd.py
@@ -38,6 +38,8 @@ clean:
 	rm *.png
 	rm *.aux
 	rm *.fls
+	rm Memorial-University-of-Newfoundland5.jpeg
+	rm *.csv
 	rm *.fdb_latexmk
 	rm *.blg
 	rm *.txt
