@@ -1,5 +1,5 @@
 # this file gives an input file (numbers1.csv) and save the output to acf.csv
-#for running this file you need to type : python computational.tidynamics.acf.py numbers1.csv acf.csv
+#for running this file you need to type : python computational.tidynamics.acf.py numbers1.txt acf1.csv
 
 
 
@@ -17,21 +17,21 @@ if len(sys.argv)==3:
 def main():
 
     #convert input file to pd
-    file=pd.read_csv(input, names=['date','numbers'] , sep=",") 
+    file=pd.read_csv(input, sep="\t") 
 
     #create empty pd file for output
     file2 = pd.DataFrame()
 
     #define columns in input file
     z=file.iloc[:,0]
-    zz=file.iloc[:,2]
+    zz=file.iloc[:,3]
 
     #compute tidynamics.acf for specific column 
     for i in file:
         af=tidynamics.acf(zz)
 
     #save acf to empty pd 
-    file2[""]=af
+    file2[" "]=af
     #convert file2 to csvfile with out index
     file2.to_csv(output,index=False) 
 
