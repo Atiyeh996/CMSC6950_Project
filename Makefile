@@ -38,6 +38,8 @@ clean:
 	rm *.png
 	rm *.aux
 	rm *.fls
+	rm Memorial-University-of-Newfoundland5.jpeg
+	rm *.csv
 	rm *.fdb_latexmk
 	rm *.blg
 	rm *.txt
