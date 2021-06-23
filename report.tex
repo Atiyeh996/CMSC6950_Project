@@ -122,7 +122,7 @@ For D-dimensional time series, a sum is performed on the last dimension.
 \subsubsection{computation}
  
 \textit{This file gives an input file (numbers1.csv) and save the output to acf.csv.\newline
-for running this file you need to type : python computational.tidynamics.acf.py numbers1.csv acf.csv\newline}
+for running this file you need to type : python computational.tidynamics.acf.py numbers1.txt acf1.csv\newline}
 
 
 
@@ -144,7 +144,7 @@ def main():\newline
 \hspace*{10mm}    file2 = pd.DataFrame()\newline
      %#define columns in input file
 \hspace*{10mm}    z=file.iloc[:,0]\newline
-\hspace*{10mm}    zz=file.iloc[:,1]\newline\newline
+\hspace*{10mm}    zz=file.iloc[:,3]\newline\newline
     %#compute tidynamics.acf for specific column 
 \hspace*{10mm}    for i in file:\newline
 \hspace*{20mm}        af=tidynamics.acf(zz)\newline
@@ -161,8 +161,8 @@ if --name--=="--main--":\newline
 
 
 \subsubsection{visualization}
-\textit{for this file, I use acf.csv from computaional.tidynamics.acf.py and two different time series time.csv and time2.csv.\newline
-to run the file you need to type: python visualization.tidynamics.acf.py acf.csv time.csv time2.csv acf.png}
+\textit{for this file, I use acf.csv from computaional.tidynamics.acf.py and two different time series time.txt and time2.txt.\newline
+to run the file you need to type: python visualization.tidynamics.acf.py acf1.csv time.txt time2.txt acf1.png}
 
 
 import sys\newline
