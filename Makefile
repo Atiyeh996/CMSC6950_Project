@@ -6,7 +6,7 @@ report.pdf: report.tex msd.png acf.png Memorial-University-of-Newfoundland5.jpeg
 msd.png: visualization.tidynamics.msd.py Data.csv
 	python visualization.tidynamics.msd.py Data.csv msd.png
 
-acf.png: visualization.tidynamics.acf.py acf.csv time.txt time2.txt
+acf.png: visualization.tidynamics.acf.py acf1.csv time.txt time2.txt
 	python visualization.tidynamics.acf.py acf.csv time.txt time2.txt acf.png
 
 Memorial-University-of-Newfoundland5.jpeg: Memorial-University-of-Newfoundland5.jpeg
@@ -39,12 +39,12 @@ clean:
 	rm *.aux
 	rm *.fls
 	rm Memorial-University-of-Newfoundland5.jpeg
-	rm *.csv
+#	rm *.csv
 	rm *.fdb_latexmk
 	rm *.blg
 	rm *.txt
 #	rm *.csv
-	rm Memorial-University-of-Newfoundland5.jpeg
+#	rm Memorial-University-of-Newfoundland5.jpeg
 	rm *.bbl
 	rm *.dvi
 	
