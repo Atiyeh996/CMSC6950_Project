@@ -44,7 +44,7 @@ clean:
 	rm *.blg
 	rm *.txt
 #	rm *.csv
-	rm Memorial-University-of-Newfoundland5.jpeg
+#	rm Memorial-University-of-Newfoundland5.jpeg
 	rm *.bbl
 	rm *.dvi
 	
