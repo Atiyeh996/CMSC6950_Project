@@ -90,21 +90,35 @@ A helpful resource for tidynamics package would be \cite{ tidynamics_2018}
 \newpage
 \section{Introduction}
 
-This report includes explanation about \textbf{tidynamics} package which is used for computing the dynamics of stochastic and molecular simulations.It depends only on Python and NumPy, accepts as input NumPy arrays storing the positions and velocities of particles, implements the so-called Fast Correlation Algorithm, and perform the following computations:
+This report includes explanation about \textbf{tidynamics} package which is used for computing the dynamics of stochastic and molecular simulations.It depends only on Python and NumPy. In order to use this package some steps are required:\newline
+
+create conda environment in your project:\newline
+conda create -n environmentname\newline
+
+after installation, activation is necessary:\newline
+conda activate environmentname\newline
+
+install python and numpy within conda:\newline
+conda install python numpy\newline
+
+Tidynamics can be installed with conda:\newline
+conda install -c conda-forge tidynamics\newline
+
+after installation and cloning the repository from github, test it:\newline
+python -m pytest\newline 
+
+cloning fro github:\newline
+git clone https://github.com/pdebuyl-lab/tidynamics\newline
+
+What is conda? Imagine you are working on some projects same time and each of them need some packages, conda helps you, it make separate environments for each project and within them install requested packages. It helps you to divide projects and packages with each other.\newpage
+
+Project include two following items:\newline
 \begin{itemize}
-  \item tidynamics.msd(pos) : Mean-squared displacement (MSD) of the input trajectory using the Fast Correlation Algorithm.
-  \item tidynamics.acf(data) : Autocorrelation of the input data using the Fast Correlation Algorithm
-  \item tidynamics.cross.displacement(pos) : Cross displacement of the components of the input trajectory.
-  \item tidynamics.correlation(data1, data2) : Correlation between the input data using the Fast Correlation Algorithm.
+  \item tidynamics.msd(pos) :computes Mean-squared displacement (MSD) of the input trajectory.Gaussian is a fundamental concept in biology,for example imagine honey and water, honey is much ticker that water and particles in honey moves much less compared to the particles in water this is because the particles in water does not encounter as much resistance as particles in honey. Computing guassian falls to a computational analysis known as MSD. MSD demonstrate paricles situations along time, for analysing datasets for time and positions of particles are needed which is particle trajectory. The main focus of MSD is take the difference between positions over time. It also determines whether a particle is free (water) or limited in its movements (honey).\newline 
+  \item tidynamics.acf(data) : Autocorrelation of the input data. It is statistic representation and known as serial correlation. It refers to the degree of correlation of the same variables between two time series and it can be either positive or negative. Autocorrelation is widely used in different aspects from trade to science. ACF or correlation function is used in this project as well as MSD or mean square displacement.\newpage 
 
 \end{itemize}
 In addition, two \textbf{computational} tasks and two related \textbf{visualizations} are included. Also, it has \textbf{bibliography}.
-
-\newpage
-\section{About package}
-Tidynamics provides an efficient implementation of the Fast Correlation.\newline Algorithm (FCA)
-to compute correlation functions of interest in molecular and stochastic dynamics. FCA relies on the Fourier transform to compute correlations.The advantage of using Fourier transforms is a reduced computational cost in comparison to a direct loop over the data. Tidynamics is designed as a library in which every routine operates directly on NumPy arrays and returns NumPy arrays. The interface is simple and enables convenient use in interactive sessions or in teaching material.
-
 
 \newpage
 \section{Tasks}
@@ -112,16 +126,15 @@ to compute correlation functions of interest in molecular and stochastic dynamic
 Every tasks includes a computational part that makes intermediate file(s) and a visualization part that use intermediate file(s) and produce an image.  
 
 \subsection{tidynamics.acf(data)}
-Computes the autocorrelation for all time lags in the input data. The numerical results for large lags contain fewer samples than for short lags and are not accurate. This is intrinsic to the computation and not a limitation of the algorithm.
+Computes the autocorrelation.
 
-For D-dimensional time series, a sum is performed on the last dimension.
 
 \textbf{ Parameters:	data (array-like) – The input signal, of shape (N,) or (N,D).}\newline
 \textbf{ Returns:	ndarray of shape (N,) with the autocorrelation for successive linearly spaced time delays.}
  
 \subsubsection{computation}
  
-\textit{This file gives an input file (numbers1.csv) and save the output to acf.csv.\newline
+\textit{This file gives an input file (numbers1.txt) and save the output to acf1.csv.\newline
 for running this file you need to type : python computational.tidynamics.acf.py numbers1.txt acf1.csv\newline}
 
 
@@ -217,7 +230,7 @@ if --name--=="--main--":\newline
 
 \subsection{tidynamics.msd(pos)}
 
-Computes the MSD for all possible time deltas in the trajectory. The numerical results for large time deltas contain fewer samples than for small time times and are less accurate. This is intrinsic to the computation and not a limitation of the algorithm.
+Computes the mean square displacement.
 
 
 \textbf{
